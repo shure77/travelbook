@@ -1,0 +1,12 @@
+@mixin mdc-text-field-fill-color($color) {
+    background-color: $color;
+};
+
+.mdc-text-field { 
+    width: 80%;
+    @include mdc-text-field-fill-color(#ffffff);    
+} 
+
+.mdc-text-field::after, .mdc-text-field::before {
+    @include mdc-text-field-fill-color(#ffffff);  
+}

@@ -1,19 +1,21 @@
 <mdc-top-app-bar fixed [scrollTarget]="fixedContent" class="mdc-typography">
   <mdc-top-app-bar-row>
-    <mdc-top-app-bar-section align="start" title="Test">
+    <mdc-top-app-bar-section align="start" title="{{navbarTitle}}">
       <button mdcTopAppBarNavIcon>
-        <mdc-icon>menu</mdc-icon>
+        <mdc-icon>arrow_back</mdc-icon>
       </button>
     </mdc-top-app-bar-section>
     <mdc-top-app-bar-section align="end">
-      <mdc-icon mdcTopAppBarActionItem>file_download</mdc-icon>
-      <mdc-icon mdcTopAppBarActionItem>print</mdc-icon>
-      <mdc-icon mdcTopAppBarActionItem>bookmark</mdc-icon>
+      <mdc-icon mdcTopAppBarActionItem>search</mdc-icon>
+      <mdc-icon mdcTopAppBarActionItem>input</mdc-icon>
     </mdc-top-app-bar-section>
   </mdc-top-app-bar-row>
 </mdc-top-app-bar>
 <div class="demo-app-bar-content" #fixedContent>
-  <p *ngFor="let lorem of lorems">{{lorem}}</p>
+  <p *ngFor="let lorem of lorems">{{ lorem }}</p>
 </div>
-
-<router-outlet></router-outlet>
+<div class="ttttt" ><p>{{navbarTitle}}</p>
+</div>
+<div class="container siteContent">
+<app-create (navbarTitle)="setNavbarTitle($event)"></app-create>
+</div>

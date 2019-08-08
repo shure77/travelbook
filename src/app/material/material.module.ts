@@ -1,7 +1,14 @@
-import { NgModule } from '@angular/core';
-import { MdcFabModule, MdcIconModule, MdcMenuModule, MdcButtonModule, MdcTopAppBarModule, MdcTypographyModule } from '@angular-mdc/web';
-
-
+import { NgModule } from "@angular/core";
+import {
+  MdcFabModule,
+  MdcIconModule,
+  MdcMenuModule,
+  MdcButtonModule,
+  MdcTopAppBarModule,
+  MdcTypographyModule,
+  MdcFormFieldModule,
+  MdcTextFieldModule
+} from "@angular-mdc/web";
 
 @NgModule({
   declarations: [],
@@ -11,15 +18,19 @@ import { MdcFabModule, MdcIconModule, MdcMenuModule, MdcButtonModule, MdcTopAppB
     MdcMenuModule,
     MdcButtonModule,
     MdcTopAppBarModule,
-    MdcTypographyModule
+    MdcTypographyModule,
+    MdcFormFieldModule,
+    MdcTextFieldModule
   ],
   exports: [
-      MdcFabModule,
-      MdcIconModule,
-      MdcMenuModule,
-      MdcButtonModule,
-      MdcTopAppBarModule,
-      MdcTypographyModule
+    MdcFabModule,
+    MdcIconModule,
+    MdcMenuModule,
+    MdcButtonModule,
+    MdcTopAppBarModule,
+    MdcTypographyModule,
+    MdcFormFieldModule,
+    MdcTextFieldModule
   ]
 })
-export class MaterialModule { }
+export class MaterialModule {}

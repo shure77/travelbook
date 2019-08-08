@@ -1,0 +1,10 @@
+<div>
+  <h1>Create a new place</h1>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <mdc-form-field >
+    <mdc-text-field formControlName="placeName" label="Name of place">
+        <mdc-icon mdcTextFieldIcon trailing>search</mdc-icon>
+    </mdc-text-field>
+  </mdc-form-field>
+</form>
+</div>

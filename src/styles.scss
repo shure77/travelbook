@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+$mdc-theme-primary: #0097a7;
+$mdc-theme-secondary: #56c7d6;
+$h1-font-weight: 400;
+
+@import "~@angular-mdc/theme/material";
+
+h1 { 
+    color: $mdc-theme-primary;
+    font-weight: $h1-font-weight;
+}
+
+.mdc-top-app-bar__title {
+  margin-left: 33px;
+}
+
+div.container {
+  margin: 3% 10%;
+}
+
+.siteContent {
+    text-align: center;
+}
